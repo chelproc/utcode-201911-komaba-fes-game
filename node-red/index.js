@@ -18,13 +18,12 @@ exports.initNodeRED = (server, expressApp) => {
         httpAdminRoot,
         httpNodeRoot,
         userDir: path.join(__dirname, ".data"),
-        functionGlobalContext: {},
+        nodesExcludes: ["node-red"],
+        nodesDir: path.join(__dirname, "nodes"),
         editorTheme: {
             page: {
                 title: "ut.code();",
-                // favicon: "/absolute/path/to/theme/icon",
-                css: path.join(__dirname, "editor-customization", "style.css"),
-                // scripts: "/absolute/path/to/custom/js/file"
+                css: path.join(__dirname, "editor-customization", "style.css")
             },
             header: {
                 title: "ut.code();",

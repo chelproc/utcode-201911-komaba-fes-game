@@ -1,3 +1,12 @@
 .red-ui-sidebar-info-stack .red-ui-palette-category:first-child {
     display: none !important;
 }
+#red-ui-workspace > .red-ui-tabs:first-child {
+    display: none !important;
+}
+#red-ui-sidebar .red-ui-tab-link-buttons {
+    display: none !important;
+}
+ul.red-ui-header-toolbar li:not(:first-child) {
+    display: none !important;
+}
